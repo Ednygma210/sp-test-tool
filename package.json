@@ -1,7 +1,7 @@
 {
   "name": "sp-test-tool",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "main": "electron/main.cjs",
   "scripts": {
@@ -34,12 +34,12 @@
   "build": {
     "appId": "com.sptesttool.app",
     "asar": false,
-    "files": [
-      "dist/**/*",
-      "electron/**/*"
-    ],
-    "win": {
-      "target": "nsis"
+    "files": ["dist/**/*", "electron/**/*"],
+    "win": {"target": "nsis"},
+    "publish": {
+    "provider": "github",
+    "owner": "Ednygma210",
+    "repo": "sp-test-tool"
     }
   }
 }

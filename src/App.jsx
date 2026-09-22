@@ -3,12 +3,15 @@ import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
+import UpdateNotifier from './UpdateNotifier.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+    <UpdateNotifier />
+
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
@@ -16,7 +19,7 @@ function App() {
           <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
         <div>
-          <h1>Hello World - SP Test Tool</h1>
+          <h1>Hello World - SP Test Tool Version02</h1>
           <p>
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
